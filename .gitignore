@@ -1,4 +1,4 @@
 vendor
-public/thumbnails/*
-public/uploads/*
+public/thumbnails/*.jpg
+public/uploads/*.jpg
 .idea

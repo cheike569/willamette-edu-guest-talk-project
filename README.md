@@ -7,7 +7,7 @@ PHP Example Project Demonstrating:
 
 ## Introduction
 
-This project illustrates some fundamental ideas of PHP development, such as Request/Response Handling Concepts with Middleware, and offers a basic example application of a PHP API with Sqlite, PHPUnit. It also offers is a great opportunity to dive deeper if needed. The API accepts JPG images that are uploaded to the server and returned as a thumbnail. A Sqlite file contains the database. Unit tests written with PHPUnit are part of the project.
+This project illustrates some fundamental ideas of PHP development, such as Request/Response Handling Concepts with Middleware, and offers a basic example application of a PHP API with Sqlite, PHPUnit. It's also a great opportunity to dive deeper if desired. The API accepts JPG images that are uploaded to the server and returned as a thumbnail. A Sqlite file contains the database. Unit tests written with PHPUnit are part of the project.
 
 ### Directory Structure
 
@@ -103,6 +103,11 @@ You'll receive a JSON response with the following structure if successful (`HTTP
 * Since the Uploads are stored in the Database, separate the two concerns into two endpoints: One for Uploading files, and one for generating Thumbnails
 * Create multiple thumbnail variations, like black/white images or different sizes, cropping
 
+## Run Tests
+
+Tests are located in the `/tests/` directory. Run the following command to execute the tests:
+
+    ./vendor/bin/phpunit tests
 
 ### License
 
