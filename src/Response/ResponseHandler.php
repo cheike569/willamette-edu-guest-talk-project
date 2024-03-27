@@ -14,16 +14,16 @@ class ResponseHandler
         try {
             $response = Middleware::runResponseMiddlewares($response);
         } catch (MiddlewareException $e) {
-            $this->sendToClient(new JSONResponse(['error' => $e->getMessage()], $e->getCode()));
+            $this->emit(new JSONResponse(['error' => $e->getMessage()], $e->getCode()));
             return;
         }
 
         // Output the response
-        $this->sendToClient($response);
+        $this->emit($response);
     }
 
     // Actually output (echo) the response to the client (browser)
-    protected function sendToClient(Response $response): void
+    protected function emit(Response $response): void
     {
         // Output all Headers
         foreach ($response->getHeaders() as $name => $values) {
