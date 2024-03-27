@@ -1,0 +1,4 @@
+vendor
+public/thumbnails/*
+public/uploads/*
+.idea
