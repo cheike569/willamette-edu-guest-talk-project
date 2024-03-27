@@ -1,5 +1,7 @@
 # Willamette Guest Talk Project
 
+This project was created for a guest talk at Willamette University (https://willamette.edu/). It is a simple PHP API that allows users to upload images and receive thumbnails in return. The project is a great starting point for learning about PHP development and can be expanded upon in many ways.
+
 PHP Example Project Demonstrating:
 
 - PHP API with PSR-7 (guzzlehttp/psr7)
