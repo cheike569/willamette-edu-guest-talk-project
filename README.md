@@ -5,7 +5,7 @@ This project was created for a guest talk at Willamette University (https://will
 PHP Example Project Demonstrating:
 
 - PHP API with PSR-7 (guzzlehttp/psr7)
-- Sqlite Database
+- SQLite Database
 
 ## Introduction
 
@@ -63,9 +63,9 @@ Delete `database.db` and the class at `src\Database\Database.php` will create a 
 ## Endpoints
 
 ### `POST /thumbnail`
-Send form-data to this route with an `upload` field containing the binary.
+Send `form-data` to this route with an `upload` field containing the binary.
 
-Uploads an image file to the server. The image is stored in the `uploads` directory and a thumbnail is created in the `thumbnails` directory.
+Uploads an image file to the server. The image is stored in the `uploads` directory and a thumbnail is created in the `thumbnails` directory. Also, an entry is written into the SQLite database.
 
 The server responds with a JSON with the following structure if successful (`HTTP 201`):
 
