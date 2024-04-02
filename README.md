@@ -102,6 +102,7 @@ You'll receive a JSON response with the following structure if successful (`HTTP
 ## Get Involved! Possible Assignments
 
 * Write PHPUnit Tests to test both endpoints
+* Secure the Upload endpoint with a Middleware and only allow authenticated users to upload images (for example, with a secret password that is sent in the request headers)
 * Since the Uploads are stored in the Database, separate the two concerns into two endpoints: One for Uploading files, and one for generating Thumbnails
 * Create multiple thumbnail variations, like black/white images or different sizes, cropping
 

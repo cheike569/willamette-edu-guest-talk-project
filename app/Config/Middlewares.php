@@ -9,12 +9,12 @@ use Src\Response\JSONResponse;
 
 Middleware::registerRequestMiddleware(0, function(Request $request): Request {
     // Example of a middleware that checks for authorization on a secret path
-    if(str_contains($request->getUri(), 'secret')) {
-        // Very simple example, in the real world you would want to validate the token
-        if(empty($request->getServerParams()['HTTP_AUTHORIZATION'])) {
-            throw new MiddlewareException('Unauthorized', 401);
-        }
-    }
+    $requestUri = $request->getUri();
+    $headers = $request->getHeaders();
+
+
+    // Example: Throw 401 Unauthorized if the request is not authorized
+    // throw new MiddlewareException('Unauthorized', 401);
 
     return $request;
 });
