@@ -20,6 +20,7 @@ This project illustrates some fundamental ideas of PHP development, such as Requ
 ## Helpful Links
 
 - PHP Standards Recommendations: https://www.php-fig.org/psr
+- https://medoo.in/
 
 ## Installation & Class Autoloading
 
